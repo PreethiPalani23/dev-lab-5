@@ -14,7 +14,7 @@ stages {
 
     stage('Install Dependencies') {
         steps {
-            bat "\"C:\\Users\\Preethi\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe\" -m venv venv"
+            bat "\"C:\\Python312\\python.exe\" -m venv venv"
             bat "call venv\\Scripts\\activate && pip install -r requirements.txt"
         }
     }
